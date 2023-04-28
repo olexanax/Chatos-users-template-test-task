@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "age": 45,
+      "mail": "petro@gmail.com",
+      "name": "Петро Щур",
+      "id": "1788d036-daa3-4812-9c75-6e42ddccf7f6",
+      "dateOfAddition": "2023-04-28T07:09:05.945Z"
+    },
+    {
+      "age": 20,
+      "mail": "e@gmail.com",
+      "name": "olexanax",
+      "id": "c75fcff4-fe60-44a6-94da-967d838e5baf",
+      "dateOfAddition": "2023-04-28T07:09:23.219Z"
+    },
+    {
+      "age": 65,
+      "mail": "iii@gmail.com",
+      "name": "Іво бобул",
+      "id": "51a5e355-1046-41ac-a8c9-7a6580a7d15a",
+      "dateOfAddition": "2023-04-28T07:10:22.719Z"
+    },
+    {
+      "age": 55,
+      "mail": "sylkoalex@gmail.com",
+      "name": "Thor",
+      "id": "b1159a9a-eec0-4762-aa85-35e8e339e41b",
+      "dateOfAddition": "2023-04-28T07:10:38.989Z"
+    },
+    {
+      "age": 44,
+      "mail": "ggggregefvf@gmail.com",
+      "name": "гордон",
+      "id": "2cb4c26a-3911-439f-8928-fa359ab7d0c4",
+      "dateOfAddition": "2023-04-28T07:11:16.738Z"
+    },
+    {
+      "age": 4,
+      "mail": "sylkoalex@gmail.com",
+      "name": "новий",
+      "id": "52a0b388-a019-4e8d-88df-23e2c1cc69c9",
+      "dateOfAddition": "2023-04-28T07:14:13.541Z"
+    }
+  ]
+}
