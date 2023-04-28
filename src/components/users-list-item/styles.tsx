@@ -24,6 +24,9 @@ const Li = styled.li`
     form {
         width: 100%;
     }
+    button {
+        margin: 5px;
+    }
     .delete {
         color: red;
     }

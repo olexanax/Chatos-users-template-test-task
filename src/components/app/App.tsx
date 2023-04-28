@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useHttp } from "../../hooks/useHttp";
 import sort from "../../utils/sort";
 import filterBySearch from "../../utils/filter-by-search";
-import { User, SortFrom, SortBy } from "../../interfaces";
 
 import React from "react";
 import AppInfo from "../app-info/app-info";
@@ -13,6 +12,7 @@ import UsersAddForm from "../users-add-form/users-add-form";
 import Spiner from "../spiner/spiner";
 import ErrorMessage from "../error-message/ErrorMessage";
 
+import { User, SortFrom, SortBy } from "../../interfaces";
 import Div from "./styles";
 
 const App: React.FC = () => {

@@ -1,5 +1,3 @@
-import { User } from "../interfaces";
-
 export const useHttp = () => {
     const request = async (
         url: string,

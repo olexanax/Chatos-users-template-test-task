@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useHttp } from "../../hooks/useHttp";
 import { useForm, SubmitHandler } from "react-hook-form";
+
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+
 import { FormProps, Inputs } from "../../interfaces";
 import { default as StyledForm } from "./styles";
 const { v4: uuidv4 } = require("uuid");
@@ -45,9 +47,10 @@ const Form: React.FC<FormProps<"create" | "update">> = ({
             setUpdateMode!(false);
             setError(false);
         }
+        // eslint-disable-next-line
     }, [error]);
 
-    const onSubmit: SubmitHandler<Inputs> = (data) => {
+    const onSubmit: SubmitHandler<Inputs> = useCallback((data) => {
         if (type === "update") {
             setLoading(true);
             const newUser = {
@@ -94,10 +97,8 @@ const Form: React.FC<FormProps<"create" | "update">> = ({
                     setError(true);
                 });
         }
-    };
-    useEffect(() => {
-        console.log(errors);
-    });
+        // eslint-disable-next-line
+    }, []);
     return (
         <StyledForm onSubmit={handleSubmit(onSubmit)}>
             <div className="name_input">

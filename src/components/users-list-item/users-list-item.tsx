@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHttp } from "../../hooks/useHttp";
-import { UsersListItemProps } from "../../interfaces";
+
 import Form from "../form/form";
+
+import { UsersListItemProps } from "../../interfaces";
 import Li from "./styles";
 
 const UsersListItem: React.FC<UsersListItemProps> = ({
@@ -14,12 +16,27 @@ const UsersListItem: React.FC<UsersListItemProps> = ({
 }) => {
     const [updateMode, setUpdateMode] = useState<boolean>(false);
     const { request } = useHttp();
+    const [loading, setLoading] = useState<boolean>(false);
+    const [error, setError] = useState<boolean>(false);
 
     const deleteUser = () => {
-        request(`http://localhost:3001/users/${id}`, "DELETE").then(() =>
-            setUsersData((data) => data.filter((user) => user.id !== id))
-        );
+        setLoading(true);
+        request(`http://localhost:3001/users/${id}`, "DELETE")
+            .then(() =>
+                setUsersData((data) => data.filter((user) => user.id !== id))
+            )
+            .then(() => setLoading(false))
+            .catch(() => setError(true));
     };
+
+    useEffect(() => {
+        if (error) {
+            alert("Помилка завантаження даних, спробуйте пізніше");
+            setUpdateMode!(false);
+            setError(false);
+            setLoading(false);
+        }
+    }, [error]);
 
     const user = (
         <>
@@ -34,8 +51,13 @@ const UsersListItem: React.FC<UsersListItemProps> = ({
             >
                 update
             </button>
-            <button type="button" className="delete" onClick={deleteUser}>
-                delete
+            <button
+                disabled={loading}
+                type="button"
+                className="delete"
+                onClick={deleteUser}
+            >
+                {loading ? "loading..." : "delete"}
             </button>
         </>
     );

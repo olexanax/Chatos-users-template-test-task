@@ -9,8 +9,10 @@ const UsersFilter: React.FC<UsersFilterProps> = ({
 }) => {
     const activeSortFromStyle = (filter: typeof sortFrom) =>
         sortFrom === filter ? "btn active" : "btn";
+
     const activeSortByStyle = (filter: typeof sortBy) =>
         sortBy === filter ? "btn active" : "btn";
+
     return (
         <Div>
             <div className="btn_group">

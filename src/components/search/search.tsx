@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import useDebounce from "../../hooks/useDebounce";
+
 import { SearchProps } from "../../interfaces";
 import Input from "./styles";
 
 const Search: React.FC<SearchProps> = ({ setSearch }) => {
     const [loacalSearch, setlocalSearch] = useState("");
-    const debouncedValue = useDebounce<string>(loacalSearch, 500);
-    // const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    //     setSearch(e.target.value);
-    //     setlocalSearch(e.target.value);
-    // };
+    const debouncedValue = useDebounce<string>(loacalSearch, 300);
+
     useEffect(() => {
         setSearch(debouncedValue);
     }, [debouncedValue]);

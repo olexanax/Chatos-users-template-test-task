@@ -1,4 +1,5 @@
-import { UsersAddFormProps, Inputs } from "../../interfaces";
+import { UsersAddFormProps } from "../../interfaces";
+
 import Form from "../form/form";
 import Div from "./styles";
 
