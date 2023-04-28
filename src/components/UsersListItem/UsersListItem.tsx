@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { useHttp } from "../../hooks/useHttp";
+import { useHttp } from "hooks/useHttp";
 
-import Form from "../form/form";
+import Form from "components/Form/Form";
 
-import { UsersListItemProps } from "../../interfaces";
-import Li from "./styles";
+import { UsersListItemProps } from "interfaces";
+import Li from "components/UsersListItem/styles";
 
 const UsersListItem: React.FC<UsersListItemProps> = ({
     name,

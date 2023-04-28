@@ -1,5 +1,5 @@
-import { AppInfoProps } from "../../interfaces";
-import Div from "./styles";
+import { AppInfoProps } from "interfaces";
+import Div from "components/AppInfo/styles";
 
 const AppInfo: React.FC<AppInfoProps> = ({ total }) => {
     return (

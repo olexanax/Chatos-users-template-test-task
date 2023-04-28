@@ -1,4 +1,4 @@
-import { User, SortFrom, SortBy } from "../interfaces";
+import { User, SortFrom, SortBy } from "interfaces";
 
 const sort = (users: User[], filter: SortFrom, sortBy: SortBy) => {
     switch (filter) {

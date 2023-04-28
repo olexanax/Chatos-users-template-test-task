@@ -1,7 +1,7 @@
-import UsersListItem from "../users-list-item/users-list-item";
+import UsersListItem from "components/UsersListItem/UsersListItem";
 
-import { UserListProps } from "../../interfaces";
-import Ul from "./styles";
+import { UserListProps } from "interfaces";
+import Ul from "components/UsersList/styles";
 
 const Userslist: React.FC<UserListProps> = ({ users, setUsersData }) => {
     const elements = users.map((user) => {

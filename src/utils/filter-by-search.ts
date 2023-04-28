@@ -1,4 +1,4 @@
-import { User } from "../interfaces";
+import { User } from "interfaces";
 
 const filterBySearch = (items: User[], term: string) => {
     if (term.length === 0) {

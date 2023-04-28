@@ -1,4 +1,4 @@
-import "./styles.css";
+import "components/Spiner/styles.css";
 
 const Spiner: React.FC = () => {
     return <div className="loader">Loading...</div>;

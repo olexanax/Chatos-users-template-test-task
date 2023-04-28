@@ -1,4 +1,4 @@
-import error from "./error_gif.gif";
+import error from "components/ErrorMessage/error_gif.gif";
 
 const ErrorMessage: React.FC = () => {
     return (

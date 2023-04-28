@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
-import { useHttp } from "../../hooks/useHttp";
+import { useHttp } from "hooks/useHttp";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { FormProps, Inputs } from "../../interfaces";
-import { default as StyledForm } from "./styles";
+import { FormProps, Inputs } from "interfaces";
+import { default as StyledForm } from "components/Form/styles";
 const { v4: uuidv4 } = require("uuid");
 
 const schema = Yup.object().shape({

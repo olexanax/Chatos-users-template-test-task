@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "name": "Олександр",
-      "age": 20,
-      "mail": "sylkoalex@gmail.com",
-      "id": "3c3a5cc3-4eb7-4ad9-87b8-85d6568eef0c",
-      "dateOfAddition": "2023-04-28T07:52:40.931Z"
-    },
-    {
       "age": 45,
       "mail": "shchur@gmail.com",
       "name": "Петро Щур",
@@ -36,9 +29,9 @@
       "dateOfAddition": "2023-04-28T08:57:44.130Z"
     },
     {
+      "name": "Василь Симоненко",
       "age": 27,
       "mail": "symonenko@gmail.com",
-      "name": "Василь Симоненко",
       "id": "577876cd-7466-4def-bd87-82cf40a22905",
       "dateOfAddition": "2023-04-28T08:58:40.185Z"
     },
@@ -55,13 +48,6 @@
       "name": "Ольга Коцюбинська",
       "id": "f58d233b-912b-44e3-8a52-fb190cb54be8",
       "dateOfAddition": "2023-04-28T09:00:22.098Z"
-    },
-    {
-      "age": 35,
-      "mail": "lesya@gmail.com",
-      "name": "Лариса Косач-Квітка",
-      "id": "1ecad696-6c15-4b4d-ad41-4b94b1bb962f",
-      "dateOfAddition": "2023-04-28T09:01:03.213Z"
     }
   ]
 }

@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
-import { useHttp } from "../../hooks/useHttp";
-import sort from "../../utils/sort";
-import filterBySearch from "../../utils/filter-by-search";
+import { useHttp } from "hooks/useHttp";
+import sort from "utils/sort";
+import filterBySearch from "utils/filter-by-search";
 
 import React from "react";
-import AppInfo from "../app-info/app-info";
-import UsersFilter from "../users-filter/users-filter";
-import Search from "../search/search";
-import Userslist from "../users-list/users-list";
-import UsersAddForm from "../users-add-form/users-add-form";
-import Spiner from "../spiner/spiner";
-import ErrorMessage from "../error-message/ErrorMessage";
+import AppInfo from "components/AppInfo/AppInfo";
+import UsersFilter from "components/UsersFilter/UsersFilter";
+import Search from "components/Search/Search";
+import Userslist from "components/UsersList/UsersList";
+import UsersAddForm from "components/UsersAddForm/UsersAddForm";
+import Spiner from "components/Spiner/Spiner";
+import ErrorMessage from "components/ErrorMessage/ErrorMessage";
 
-import { User, SortFrom, SortBy } from "../../interfaces";
-import Div from "./styles";
+import { User, SortFrom, SortBy } from "interfaces";
+import Div from "components/App/styles";
 
 const App: React.FC = () => {
     const [usersData, setUsersData] = useState<User[]>([]);
@@ -32,6 +32,7 @@ const App: React.FC = () => {
                 setLoading(false);
                 setError(true);
             });
+        //eslint-disable-next-line
     }, []);
 
     const list =

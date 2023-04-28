@@ -1,5 +1,5 @@
-import { UsersFilterProps } from "../../interfaces";
-import Div from "./styles";
+import { UsersFilterProps } from "interfaces";
+import Div from "components/UsersFilter/styles";
 
 const UsersFilter: React.FC<UsersFilterProps> = ({
     sortFrom,

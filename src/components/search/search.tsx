@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import useDebounce from "../../hooks/useDebounce";
+import useDebounce from "hooks/useDebounce";
 
-import { SearchProps } from "../../interfaces";
-import Input from "./styles";
+import { SearchProps } from "interfaces";
+import Input from "components/Search/styles";
 
 const Search: React.FC<SearchProps> = ({ setSearch }) => {
     const [loacalSearch, setlocalSearch] = useState("");
@@ -10,6 +10,7 @@ const Search: React.FC<SearchProps> = ({ setSearch }) => {
 
     useEffect(() => {
         setSearch(debouncedValue);
+        // eslint-disable-next-line
     }, [debouncedValue]);
     return (
         <Input

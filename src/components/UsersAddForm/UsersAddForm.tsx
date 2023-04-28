@@ -1,7 +1,7 @@
-import { UsersAddFormProps } from "../../interfaces";
+import { UsersAddFormProps } from "interfaces";
 
-import Form from "../form/form";
-import Div from "./styles";
+import Form from "components/Form/Form";
+import Div from "components/UsersAddForm/styles";
 
 const UsersAddForm: React.FC<UsersAddFormProps> = ({ setUsersData }) => {
     return (
