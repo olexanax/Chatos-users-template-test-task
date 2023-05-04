@@ -18,7 +18,7 @@ import Div from "components/App/styles";
 const App: React.FC = () => {
     const [usersData, setUsersData] = useState<User[]>([]);
     const [sortFrom, setSortFrom] = useState<SortFrom>("inc");
-    const [sortBy, setSortBy] = useState<SortBy>("dateOfAddition");
+    const [sortBy, setSortBy] = useState<SortBy>("age");
     const [search, setSearch] = useState("");
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<boolean>(false);
